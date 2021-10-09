@@ -1,0 +1,139 @@
+body {
+  font-family: 'Styrene A Web';
+  min-width: 320px;
+  max-width: 1440;
+  background: #f9f9f9;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 110%;
+  text-align: center;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.header {
+  font-family: Styrene A Web;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 120%;
+  color: #000000;
+  margin-top: 71px;
+  margin-bottom: 89px;
+}
+
+.program {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 1440px;
+  padding-right: 77px;
+  padding-left: 77px;
+  align-items: flex-start;
+}
+
+.program__wrapper {
+  display: flex;
+}
+
+.program__module1 {
+  display: flex;
+  margin-bottom: 72px;
+}
+
+.program__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 120%;
+  margin-bottom: 84px;
+}
+
+.program__module1--number {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 120%;
+  min-width: 155px;
+  padding-right: 81px;
+}
+
+.program__module1--list {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  max-width: 360px;
+  padding-right: 40px;
+}
+
+li {
+  list-style-type: disc;
+
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 120%;
+}
+
+.footer {
+  display: flex;
+  max-width: 1440px;
+  justify-content: space-between;
+  margin: auto;
+  margin-bottom: 171px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 130%;
+  min-height: 293px;
+}
+
+.footer__test {
+  display: flex;
+  flex-direction: column;
+  background-color: #2d2c2a;
+  max-width: 628px;
+  color: white;
+  text-align: left;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 52px;
+  margin-left: 15px;
+}
+
+.footer__modules {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-color: #ff3535;
+  max-width: 628px;
+  text-align: left;
+  padding-left: 60px;
+  padding-top: 52px;
+  padding-right: 60px;
+  margin-right: 15px;
+}
+
+.footer__modules--title,
+.footer__test--title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 130%;
+  padding-bottom: 23px;
+}
