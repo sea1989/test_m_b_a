@@ -13,11 +13,11 @@ export default class Program extends React.Component {
         <p className='program__title'>{this.props.title}</p>
         <div className='program__wrapper'>
           <div className='program__module1'>
-            <label className='program__module1--number' for={this.props._id}>
+            <label className='program__module1--number' htmlFor={this.props._id}>
               1 модуль
             </label>
             <input
-              class='visually-hidden filter-input filter-input-checkbox'
+              className='visually-hidden filter-input filter-input-checkbox'
               type='checkbox'
               name='module'
               id={this.props._id}
@@ -33,12 +33,12 @@ export default class Program extends React.Component {
           <div className='program__module1'>
             <label
               className='program__module1--number'
-              for={this.props._id + 1}
+              htmlFor={this.props._id + 1}
             >
               2 модуль
             </label>
             <input
-              class='visually-hidden filter-input filter-input-checkbox'
+              className='visually-hidden filter-input filter-input-checkbox'
               type='checkbox'
               name='module'
               id={this.props._id + 1}
