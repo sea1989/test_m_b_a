@@ -2,7 +2,7 @@ body {
   font-family: 'Styrene A Web';
   min-width: 320px;
   max-width: 1440;
-  background: #f9f9f9;
+  background: white;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -83,11 +83,15 @@ input[type='radio'].visually-hidden {
 
 li {
   list-style-type: disc;
-
+  padding-bottom: 10px;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
   line-height: 120%;
+}
+
+li::marker {
+  color: #ff3535;
 }
 
 .footer {
@@ -107,7 +111,6 @@ li {
   display: flex;
   flex-direction: column;
   background-color: #2d2c2a;
-  max-width: 628px;
   color: white;
   text-align: left;
   padding-left: 60px;
@@ -121,7 +124,6 @@ li {
   flex-direction: column;
   color: white;
   background-color: #ff3535;
-  max-width: 628px;
   text-align: left;
   padding-left: 60px;
   padding-top: 52px;
@@ -136,4 +138,106 @@ li {
   font-size: 36px;
   line-height: 130%;
   padding-bottom: 23px;
+}
+
+@media (max-width: 1280px) {
+  .program__module1 {
+    flex-direction: column;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer__modules,
+  .footer__test {
+    width: auto;
+    margin: 10px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 860px) {
+  .program__wrapper {
+    flex-direction: column;
+  }
+
+  .header {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 120%;
+    text-align: left;
+    padding: 15px;
+    margin: 0;
+  }
+
+  .program__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 120%;
+    text-align: left;
+    padding: 15px;
+    margin: 0px;
+  }
+
+  .program {
+    padding: 0;
+    margin: 0;
+  }
+
+  .program__module1 {
+    margin-bottom: 0px;
+  }
+
+  .program__module1--number {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 130%;
+    background-color: #f7f7f7;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    margin: 15px;
+    width: 100%;
+  }
+
+  .program__module1--list {
+    display: none;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 130%;
+    margin: 25px;
+    padding: 15px;
+  }
+
+  input:checked + ul {
+    display: block;
+  }
+
+  .program__module1--number::before {
+    content: '';
+    width: 18px;
+    height: 18px;
+    background-image: url(../assets/img/icon.svg);
+    position: absolute;
+    left: 34px;
+  }
+
+  .footer__modules--title,
+  .footer__test--title {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 120%;
+  }
+
+.footer__modules--text, .footer__test--list {font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 130%;}
+.footer {
+  margin-bottom: 0px;
+}
 }
