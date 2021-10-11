@@ -200,7 +200,6 @@ li::marker {
     padding-top: 14px;
     padding-bottom: 14px;
     margin: 15px;
-    width: 100%;
   }
 
   .program__module1--list {
@@ -233,11 +232,18 @@ li::marker {
     line-height: 120%;
   }
 
-.footer__modules--text, .footer__test--list {font-style: normal;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 130%;}
-.footer {
-  margin-bottom: 0px;
-}
+  .footer__modules--text,
+  .footer__test--list {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 130%;
+  }
+  .footer {
+    margin-bottom: 0px;
+  }
+
+  .program__wrapper {
+    width: 100%;
+  }
 }
