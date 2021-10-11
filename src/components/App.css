@@ -65,12 +65,14 @@ input[type='radio'].visually-hidden {
 }
 
 .program__module1--number {
+  border-top: 2px solid #ff3535;
   font-style: normal;
   font-weight: normal;
   font-size: 32px;
   line-height: 120%;
   min-width: 155px;
-  padding-right: 81px;
+  margin-right: 81px;
+  padding-top: 30px;
 }
 
 .program__module1--list {
@@ -79,6 +81,7 @@ input[type='radio'].visually-hidden {
   text-align: start;
   max-width: 360px;
   padding-right: 40px;
+  padding-top: 30px;
 }
 
 li {
@@ -200,6 +203,7 @@ li::marker {
     padding-top: 14px;
     padding-bottom: 14px;
     margin: 15px;
+    border: none;
   }
 
   .program__module1--list {
